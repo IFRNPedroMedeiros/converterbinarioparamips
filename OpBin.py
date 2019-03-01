@@ -82,7 +82,7 @@ b = input()
 bina = list(b)
 
 while len(bina) != 0:
-
+    print(bina)
     if oper(bina) == 0:
         if funct(bina) == 0:
             f = 'SLL'
@@ -188,21 +188,48 @@ while len(bina) != 0:
             f = 'TNE'
             print("{} ${}, ${}".format(f, rs(bina), rt(bina)))
 
-        if funct(bina) == 32: f = 'ADD'
-        elif funct(bina) == 33: f = 'ADDU'
-        elif funct(bina) == 34: f = 'SUB'
-        elif funct(bina) == 35: f = 'SUBU'
-        elif funct(bina) == 36: f = 'AND'
-        elif funct(bina) == 37: f = 'OR'
-        elif funct(bina) == 38: f = 'XOR'
-        elif funct(bina) == 39: f = 'NOR'
-        elif funct(bina) == 41: f = 'DADD'
-        elif funct(bina) == 42: f = 'SLT'
-        elif funct(bina) == 43: f = 'SLTU'
-        elif funct(bina) == 45: f = 'DADDU'
-        elif funct(bina) == 46: f = 'DSUB'
-        elif funct(bina) == 47: f = 'DSUBU'
-        print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        if funct(bina) == 32:
+          f = 'ADD'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 33:
+          f = 'ADDU'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 34:
+          f = 'SUB'
+
+        elif funct(bina) == 35:
+          f = 'SUBU'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 36:
+          f = 'AND'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 37:
+          f = 'OR'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 38:
+          f = 'XOR'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 39:
+          f = 'NOR'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 41:
+          f = 'DADD'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 42:
+          f = 'SLT'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 43:
+          f = 'SLTU'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 45:
+          f = 'DADDU'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 46:
+          f = 'DSUB'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
+        elif funct(bina) == 47:
+          f = 'DSUBU'
+          print("{} ${}, ${}, ${}".format(f, rd(bina), rs(bina), rt(bina)))
         elif funct(bina) == 52:
             f = 'TEQ'
             print("{} ${}, ${}".format(f, rs(bina), rt(bina)))
@@ -226,21 +253,48 @@ while len(bina) != 0:
             print("{} ${}, ${}, ${}".format(f, rd(bina), rt(bina), sa(bina)))
 
     if oper(bina) == 1:
-        if rt(bina) == 0: f = 'BLTZ'
-        elif rt(bina) == 1: f = 'BGEZ'
-        elif rt(bina) == 2: f = 'BLTZL'
-        elif rt(bina) == 3: f = 'BGEZL'
-        elif rt(bina) == 8: f = 'TGEI'
-        elif rt(bina) == 9: f = 'TGEIU'
-        elif rt(bina) == 10: f = 'TLTI'
-        elif rt(bina) == 11: f = 'TLTIU'
-        elif rt(bina) == 12: f = 'TEQI'
-        elif rt(bina) == 14: f = 'TNEI'
-        elif rt(bina) == 16: f = 'BLTZAL'
-        elif rt(bina) == 17: f = 'BGEZAL'
-        elif rt(bina) == 18: f = 'BLTZALL'
-        elif rt(bina) == 19: f = 'BGEZALL'
-        print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        if rt(bina) == 0:
+          f = 'BLTZ'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 1:
+          f = 'BGEZ'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 2:
+          f = 'BLTZL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 3:
+          f = 'BGEZL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 8:
+          f = 'TGEI'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 9:
+          f = 'TGEIU'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 10:
+          f = 'TLTI'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 11:
+          f = 'TLTIU'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 12:
+          f = 'TEQI'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 14:
+          f = 'TNEI'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 16:
+          f = 'BLTZAL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 17:
+          f = 'BGEZAL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 18:
+          f = 'BLTZALL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
+        elif rt(bina) == 19:
+          f = 'BGEZALL'
+          print("{} ${}, {}".format(f, rs(bina), imm(bina)))
     elif oper(bina) == 6:
         f = 'BLEZ'
         print("{} ${}, {}".format(f, rs(bina), imm(bina)))
@@ -395,21 +449,21 @@ while len(bina) != 0:
 
     if oper(bina) == 2:
         f = 'j'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
     elif oper(bina) == 3:
         f = 'jal'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
     elif oper(bina) == 16:
         f = 'COP0'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
     elif oper(bina) == 17:
         f = 'COP1'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
     elif oper(bina) == 18:
         f = 'COP2'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
     elif oper(bina) == 19:
         f = 'COP3'
-        print("{} {})".format(f, end(bina)))
+        print("{} {}".format(f, end(bina)))
 
-    del bina[0:31]
+    del bina[0:32]
