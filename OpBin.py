@@ -82,7 +82,6 @@ b = input()
 bina = list(b)
 
 while len(bina) != 0:
-    print(bina)
     if oper(bina) == 0:
         if funct(bina) == 0:
             f = 'SLL'
